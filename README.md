@@ -17,4 +17,5 @@ Miércoles 16 de Septiembre (2 semanas)
     - ***[What is HTML5 Semantic Markup - Colt's Code Camp](https://www.youtube.com/watch?v=naha1DIHK4E)***
 - Usar CSS plano (sin frameworks ni libs extras)
 - Usar [Flexbox](https://www.internetingishard.com/html-and-css/flexbox/) para el layout del sitio
+- En este 1er proyecto, _no nos interesa que sea responsive y mobile-friendly_ (es un plus, pero no un requisito)
 - hacer un deploy del proyecto en [Vercel](https://vercel.com/)
