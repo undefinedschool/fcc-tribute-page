@@ -34,6 +34,10 @@ body {
   display: flex;
   margin-bottom: 50px;
 }
+.main-wrapper .content-wrapper .band-description #image {
+  max-width: 380px;
+  display: block;
+}
 
 .main-wrapper .content-wrapper .band-description #img-caption {
   display: none;
