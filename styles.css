@@ -22,16 +22,12 @@ header {
   box-shadow: inset 0px -66px 50px -50px black;
 }
 
-#img-div {
+header figure {
   height: inherit;
   flex-basis: 100%;
   display: flex;
   align-items: flex-end;
   z-index: 2;
-}
-
-#img-div figcaption {
-  display: none;
 }
 
 header img {
@@ -56,12 +52,23 @@ header img {
   user-select: none;
 }
 
-/* Se usó position relative, z-index y el background para esconder la drop-shadow inferior de la imagen del header */
-#tribute-info {
+.gradientBanner {
+  width: 100%;
+  height: 0.4rem;
+  background: linear-gradient(
+    90deg,
+    rgb(250, 82, 82) 0%,
+    rgb(189, 89, 255) 100%
+  );
+  background-clip: border-box;
   position: relative;
+  z-index: 2;
+}
+
+/* Se usó position relative, z-index y el background para esconder la drop-shadow inferior de la imagen del header */
+.tributeInfo {
   background: #f5f4f2;
   width: 100%;
-  z-index: 2;
   display: flex;
   justify-content: center;
 }
@@ -82,7 +89,6 @@ header img {
 
 .albumsSection {
   margin: 2rem 0 3rem 0;
-  font-size: 1.4rem;
 }
 
 .albumsContainer {
@@ -122,6 +128,13 @@ header img {
 }
 .album5 {
   background-image: url("./Images/kamikaze.jpg");
+}
+
+section figcaption {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
 }
 
 .moreInfo {
@@ -199,10 +212,10 @@ footer a:hover {
 }
 
 ::selection {
-  background: rgba(255, 100, 100, 0.5); /* WebKit/Blink Browsers */
+  background: rgba(240, 66, 188, 0.5); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: rgba(255, 100, 100, 0.5); /* Gecko Browsers */
+  background: rgba(240, 66, 188, 0.5); /* Gecko Browsers */
 }
 
 @media screen and (max-width: 600px) {
@@ -224,7 +237,7 @@ footer a:hover {
   }
 
   .infoContainer p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .albumsContainer {
@@ -238,5 +251,9 @@ footer a:hover {
 
   footer p {
     font-size: 1.5rem;
+  }
+
+  section figcaption {
+    font-size: 1.6rem;
   }
 }
