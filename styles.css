@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+.header-wrapper .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  font-size: 48px;
+}
+
+.main-wrapper .content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-wrapper .content-wrapper .band-description {
+  display: flex;
+}
+
+.main-wrapper .content-wrapper .band-description #img-caption {
+  display: none;
+}
+
+.main-wrapper .content-wrapper .band-description #tribute-info {
+  padding-left: 15px;
+}
+
+.main-wrapper .content-wrapper .band-description #tribute-info h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.main-wrapper .content-wrapper .band-description #tribute-info p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+}
