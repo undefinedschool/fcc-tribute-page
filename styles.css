@@ -166,7 +166,7 @@ body {
   font-size: 10px;
 }
 .main-wrapper .band-discography .openings {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .main-wrapper .band-discography .openings .openings-wrapper {
@@ -214,6 +214,22 @@ body {
   height: 130px;
   color: #ccc;
   text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer .heart-icon {
+  color: rgb(148, 0, 57);
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
 }
 
 @media (max-width: 426px) {
