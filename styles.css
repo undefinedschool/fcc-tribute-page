@@ -63,26 +63,26 @@ body {
   padding-top: 100px;
   margin-bottom: 50px;
 }
-.main-wrapper .content-wrapper .band-description #image {
+.main-wrapper .content-wrapper .band-description .band-image {
   max-width: 380px;
   display: block;
 }
 
-.main-wrapper .content-wrapper .band-description #img-caption {
+.main-wrapper .content-wrapper .band-description .img-caption {
   display: none;
 }
 
-.main-wrapper .content-wrapper .band-description #tribute-info {
+.main-wrapper .content-wrapper .band-description .tribute-info {
   padding-left: 15px;
 }
 
-.main-wrapper .content-wrapper .band-description #tribute-info h1 {
+.main-wrapper .content-wrapper .band-description .tribute-info h1 {
   font-family: 'Anton', sans-serif;
   font-size: 36px;
   margin-bottom: 20px;
 }
 
-.main-wrapper .content-wrapper .band-description #tribute-info p {
+.main-wrapper .content-wrapper .band-description .tribute-info p {
   font-size: 14px;
   text-align: justify;
 }
@@ -229,20 +229,20 @@ body {
     flex-direction: column;
   }
 
-  .main-wrapper .band-description #image {
+  .main-wrapper .band-description .band-image {
     width: 100%;
   }
 
-  .main-wrapper .band-description #image,
-  .main-wrapper .band-description #tribute-info {
+  .main-wrapper .band-description .band-image,
+  .main-wrapper .band-description .tribute-info {
     margin: 0 auto;
   }
 
-  .main-wrapper .band-description #tribute-info {
+  .main-wrapper .band-description .tribute-info {
     padding: 10px;
   }
 
-  .main-wrapper .content-wrapper .band-description #tribute-info h1,
+  .main-wrapper .content-wrapper .band-description .tribute-info h1,
   .main-wrapper .section-title {
     text-align: center;
   }
