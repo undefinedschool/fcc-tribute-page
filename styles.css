@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+  --main-font: 'Open Sans', sans-serif;
+  --titles-font: 'Anton', sans-serif;
+
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--main-font);
 }
 
 .header-wrapper {
-  background-color: #000;
+  background-color: var(--secondary-color);
   position: fixed;
   margin-bottom: 50px;
   width: 100vw;
@@ -35,7 +43,7 @@ body {
 
 .header-wrapper .nav-bar ul > li > a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
   text-transform: uppercase;
   display: inline-block;
   padding: 10px;
@@ -46,10 +54,10 @@ body {
 }
 
 .header-wrapper .logo {
-  color: #fff;
+  color: var(--primary-color);
   font-weight: 700;
   text-decoration: none;
-  font-family: 'Anton', sans-serif;
+  font-family: var(--titles-font);
   font-size: 48px;
 }
 
@@ -77,7 +85,7 @@ body {
 }
 
 .main-wrapper .content-wrapper .band-description .tribute-info h1 {
-  font-family: 'Anton', sans-serif;
+  font-family: var(--titles-font);
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -88,7 +96,7 @@ body {
 }
 
 .main-wrapper .section-title {
-  font-family: 'Anton', sans-serif;
+  font-family: var(--titles-font);
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -131,7 +139,7 @@ body {
 }
 
 .main-wrapper .band-discography .section-subtitle {
-  font-family: 'Anton', sans-serif;
+  font-family: var(--titles-font);
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -228,7 +236,7 @@ body {
 
 .footer a {
   text-decoration: none;
-  color: #000;
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
