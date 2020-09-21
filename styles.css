@@ -226,8 +226,26 @@ body {
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer p:first-child {
+  font-size: 14px;
+}
+
+.footer p:nth-child(2) {
+  font-size: 12px;
+}
+
+.footer p:nth-child(2) a {
+  text-decoration: underline;
 }
 
 .footer .heart-icon {
