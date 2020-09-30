@@ -11,6 +11,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,29 +29,12 @@ body {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.header-wrapper .nav-bar ul {
-  display: flex;
-}
-
-.header-wrapper .nav-bar ul > li {
-  list-style: none;
-  margin: 5px;
-}
-
-.header-wrapper .nav-bar ul > li > a {
-  text-decoration: none;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 10px;
-}
-
-.header-wrapper .nav-bar ul > li > a:hover {
-  background-color: #292929;
+.header-wrapper .nav-bar {
+  display: none;
 }
 
 .header-wrapper .logo {
@@ -68,12 +52,18 @@ body {
 
 .main-wrapper .content-wrapper .band-description {
   display: flex;
+  flex-direction: column;
   padding-top: 100px;
   margin-bottom: 50px;
 }
+
 .main-wrapper .content-wrapper .band-description .band-image {
-  max-width: 380px;
-  display: block;
+  width: 100%;
+}
+
+.main-wrapper .content-wrapper .band-description .band-image,
+.main-wrapper .content-wrapper .band-description .tribute-info {
+  margin: 0 auto;
 }
 
 .main-wrapper .content-wrapper .band-description .img-caption {
@@ -81,41 +71,46 @@ body {
 }
 
 .main-wrapper .content-wrapper .band-description .tribute-info {
-  padding-left: 15px;
+  padding: 10px;
 }
 
 .main-wrapper .content-wrapper .band-description .tribute-info h1 {
   font-family: var(--titles-font);
   font-size: 36px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .main-wrapper .content-wrapper .band-description .tribute-info p {
   font-size: 14px;
-  text-align: justify;
+  text-align: center;
 }
 
 .main-wrapper .section-title {
   font-family: var(--titles-font);
   font-size: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .main-wrapper hr {
   margin-bottom: 30px;
-  max-width: 400px;
+  width: 100%;
 }
 
 .main-wrapper .band-members .members-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .main-wrapper .band-members .members-wrapper .member {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 15px;
 }
 .main-wrapper .band-members .members-wrapper .member img {
   max-width: 150px;
@@ -218,7 +213,7 @@ body {
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 230px;
+  width: 100%;
   height: 130px;
   color: #ccc;
   text-decoration: none;
@@ -258,60 +253,76 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 426px) {
-  .header-wrapper .nav-bar {
-    display: none;
-  }
-
+@media (min-width: 426px) {
   .header-wrapper .nav-wrapper {
-    justify-content: center;
+    justify-content: space-between;
   }
 
-  .main-wrapper .band-description {
-    flex-direction: column;
+  .header-wrapper .nav-bar {
+    display: block;
   }
 
-  .main-wrapper .band-description .band-image {
-    width: 100%;
+  .header-wrapper .nav-bar ul {
+    display: flex;
   }
 
-  .main-wrapper .band-description .band-image,
-  .main-wrapper .band-description .tribute-info {
-    margin: 0 auto;
+  .header-wrapper .nav-bar ul > li {
+    list-style: none;
+    margin: 5px;
   }
 
-  .main-wrapper .band-description .tribute-info {
+  .header-wrapper .nav-bar ul > li > a {
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    display: inline-block;
     padding: 10px;
   }
 
-  .main-wrapper .content-wrapper .band-description .tribute-info h1,
-  .main-wrapper .section-title {
-    text-align: center;
+  .header-wrapper .nav-bar ul > li > a:hover {
+    background-color: #292929;
+  }
+
+  .main-wrapper .content-wrapper .band-description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-wrapper .content-wrapper .band-description .band-image {
+    width: 380px;
+    display: block;
+  }
+
+  .main-wrapper .content-wrapper .band-description .tribute-info {
+    padding: 0 0 0 15px;
+  }
+
+  .main-wrapper .content-wrapper .band-description .tribute-info h1 {
+    text-align: left;
+  }
+
+  .main-wrapper .content-wrapper .band-description .tribute-info p {
+    text-align: justify;
+  }
+
+  .main-wrapper .content-wrapper .section-title {
+    text-align: left;
   }
 
   .main-wrapper hr {
-    max-width: 100%;
+    max-width: 400px;
   }
 
-  .main-wrapper .members-wrapper {
-    flex-wrap: wrap;
-    padding: 0 20px;
+  .main-wrapper .content-wrapper .band-members .members-wrapper {
+    flex-wrap: no-wrap;
+    padding: 0;
   }
 
-  .main-wrapper .members-wrapper .member {
-    margin-bottom: 15px;
-  }
-
-  .main-wrapper
-    .band-discography
-    .openings
-    .openings-wrapper
-    .opening
-    .opening-description {
-    width: 80px;
+  .main-wrapper .content-wrapper .band-members .members-wrapper .member {
+    margin-bottom: 0;
   }
 
   .main-wrapper .band-discography .openings .openings-wrapper .see-more {
-    width: 100%;
+    width: 230px;
   }
 }
